@@ -15,9 +15,18 @@ This repo is meant to be up-to-date, providing type-safety and synchronous & asy
 
 To-Be-Completed as updates roll-out.
 
+### Import all functions at once
+```ts
+import {tools} from "useful-functions-ts";
+
+tools.delay()
+tools.formatNumber()
+// etc.
+```
+
 ### Delay
 ```ts
-import {delay} from 'useful-functions-ts';
+import {delay} from "useful-functions-ts";
 
 await delay(1000); // Wait for 1000 milliseconds
 ```
@@ -27,6 +36,6 @@ await delay(1000); // Wait for 1000 milliseconds
 ```ts
 import {formatNumber} from "useful-functions-ts";
 
-formatNumber(192874.24, 'en') // Returns 192,874.24
-formatNumber(192874.24, 'de') // Returns 192.874,24
+formatNumber(192874.24, 'en'); // Returns 192,874.24
+formatNumber(192874.24, 'de'); // Returns 192.874,24
 ```
