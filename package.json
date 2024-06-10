@@ -1,0 +1,32 @@
+{
+  "name": "useful-functions-ts",
+  "version": "0.0.0",
+  "description": "Useful functions for TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "github:konotorii/useful-functions-ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "functions",
+    "formatting",
+    "console"
+  ],
+  "author": "Konotorii",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2"
+  }
+}
