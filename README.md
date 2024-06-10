@@ -10,9 +10,15 @@ This repo is meant to be up-to-date, providing type-safety and synchronous & asy
 
 - Console Progress
 - Number Formatting
-- Async Delay function
 
 ## Features
 - - -
 
 To-Be-Completed as updates roll-out.
+
+### Delay
+```ts
+import {delay} from 'useful-functions-ts';
+
+await delay(1000); // Wait for 1000 milliseconds
+```
