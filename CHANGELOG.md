@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/konotorii/useful-functions-ts/compare/v0.2.0...v0.2.1) (2024-06-10)
+
+
+### Bug Fixes
+
+* Functions can be imported from tools and individually ([#3](https://github.com/konotorii/useful-functions-ts/issues/3)) ([43d031b](https://github.com/konotorii/useful-functions-ts/commit/43d031b9a3a1b01a7bf06fca366835c9ee194c68))
+
+
+
 # [0.2.0](https://github.com/konotorii/useful-functions-ts/compare/v0.1.0...v0.2.0) (2024-06-10)
 
 
