@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/konotorii/useful-functions-ts/compare/v0.2.2...v0.3.0) (2024-06-18)
+
+
+### Features
+
+* Added percentage function ([8991b53](https://github.com/konotorii/useful-functions-ts/commit/8991b53fcdfb6366781a179cbb14bfb3d85db647))
+
+
+
 ## [0.2.2](https://github.com/konotorii/useful-functions-ts/compare/v0.2.1...v0.2.2) (2024-06-10)
 
 
