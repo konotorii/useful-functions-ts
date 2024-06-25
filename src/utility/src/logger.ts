@@ -12,10 +12,6 @@ export const output: {
     type: "INFO",
 }]
 
-export function clearOutput() {
-    output.splice(0, output.length)
-}
-
 interface LoggerProps {
     outputFile?: boolean,
     filePath?: string,
@@ -39,7 +35,7 @@ class Logger {
 
         const find = fs.existsSync(filePath)
 
-        if (!find) fs.writeFileSync(filePath,DateTime.now().toISO({includeOffset: false}) + "| =--- START OF LOG ---=\n");
+        if (!find) fs.writeFileSync(filePath, DateTime.now().toISO({includeOffset: false}) + "| =--- START OF LOG ---=\n");
 
         fs.appendFileSync(filePath, msg + '\n')
     }
@@ -123,6 +119,10 @@ class Logger {
     getOutput() {
         if (this.props.outputJson) return output
         else return Error('You need to enable JSON outputs first before you can call this function!')
+    }
+
+    clearOutput() {
+        output.splice(0, output.length)
     }
 }
 
