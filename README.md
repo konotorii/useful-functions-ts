@@ -65,4 +65,8 @@ logger.warn("A warning");
 logger.error("An error occured");
 logger.success("Succeeded!");
 logger.debug("Debug info");
+
+
+logger.getOutput() // Get JSON console output if option enabled
+logger.clearOutput() // Clear the JSON console output
 ```
