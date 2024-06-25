@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/konotorii/useful-functions-ts/compare/v0.5.0...v0.5.1) (2024-06-25)
+
+
+### Bug Fixes
+
+* Return type of getoutput from logger ([7ea0f08](https://github.com/konotorii/useful-functions-ts/commit/7ea0f083319d566e380f55d3273880a50d4c945e))
+
+
+
 # [0.5.0](https://github.com/konotorii/useful-functions-ts/compare/v0.4.1...v0.5.0) (2024-06-25)
 
 
@@ -42,10 +51,6 @@
 ### Features
 
 * Added percentage function ([8991b53](https://github.com/konotorii/useful-functions-ts/commit/8991b53fcdfb6366781a179cbb14bfb3d85db647))
-
-
-
-## [0.2.2](https://github.com/konotorii/useful-functions-ts/compare/v0.2.1...v0.2.2) (2024-06-10)
 
 
 
