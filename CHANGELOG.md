@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/konotorii/useful-functions-ts/compare/v0.4.1...v0.5.0) (2024-06-25)
+
+
+### Features
+
+* Add function to logger class to clear output ([45abf18](https://github.com/konotorii/useful-functions-ts/commit/45abf18aca3555a7cff005019be6da482e88a1ba))
+
+
+
 ## [0.4.1](https://github.com/konotorii/useful-functions-ts/compare/v0.4.0...v0.4.1) (2024-06-25)
 
 
@@ -37,15 +46,6 @@
 
 
 ## [0.2.2](https://github.com/konotorii/useful-functions-ts/compare/v0.2.1...v0.2.2) (2024-06-10)
-
-
-
-## [0.2.1](https://github.com/konotorii/useful-functions-ts/compare/v0.2.0...v0.2.1) (2024-06-10)
-
-
-### Bug Fixes
-
-* Functions can be imported from tools and individually ([#3](https://github.com/konotorii/useful-functions-ts/issues/3)) ([43d031b](https://github.com/konotorii/useful-functions-ts/commit/43d031b9a3a1b01a7bf06fca366835c9ee194c68))
 
 
 
