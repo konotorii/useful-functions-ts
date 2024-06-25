@@ -2,22 +2,23 @@ import {DateTime} from 'luxon';
 import path from "path";
 import fs from "fs";
 
-export const output: {
+interface Output {
     text: string,
     time: string,
     type: "INFO" | "LOG" | "WARN" | "DEBUG" | "ERROR" | "SUCCESS"
-}[] = [{
-    text: "| =--- START OF LOG ---=",
-    time: DateTime.now().toISO({includeOffset: false}),
-    type: "INFO",
-}]
+}
 
 interface LoggerProps {
     outputFile?: boolean,
     filePath?: string,
     outputJson?: boolean,
-
 }
+
+const output: Output[] = [{
+    text: "| =--- START OF LOG ---=",
+    time: DateTime.now().toISO({includeOffset: false}),
+    type: "INFO",
+}]
 
 class Logger {
     props: LoggerProps
@@ -116,9 +117,9 @@ class Logger {
         console.log(this.msgFormatter(text, 'WARN'));
     }
 
-    getOutput() {
+    getOutput(): Output[] {
         if (this.props.outputJson) return output
-        else return Error('You need to enable JSON outputs first before you can call this function!')
+        else Error('You need to enable JSON outputs first before you can call this function!')
     }
 
     clearOutput() {
