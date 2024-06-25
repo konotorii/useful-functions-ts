@@ -1,3 +1,16 @@
+## [0.4.1](https://github.com/konotorii/useful-functions-ts/compare/v0.4.0...v0.4.1) (2024-06-25)
+
+
+### Bug Fixes
+
+* Delete .idea directory ([2d0d42f](https://github.com/konotorii/useful-functions-ts/commit/2d0d42fcab57c25a08e14f6f6e2fb7b0eca54698))
+* Git ignore .idea folder ([49a170a](https://github.com/konotorii/useful-functions-ts/commit/49a170aea7b800b66ddf4798bc2839bd0dac5319))
+* Individual imports work again ([b7c81e0](https://github.com/konotorii/useful-functions-ts/commit/b7c81e0cbc58f09eef71f710ecec1c3dc946e3a1))
+* Make logger class uppercase ([98b2ebb](https://github.com/konotorii/useful-functions-ts/commit/98b2ebbd244c448b53dc9fc88f28429681c91e2d))
+* Remove first all export from main file ([1a86cb1](https://github.com/konotorii/useful-functions-ts/commit/1a86cb19545daabc3335bcbb9ea97bad3560c716))
+
+
+
 # [0.4.0](https://github.com/konotorii/useful-functions-ts/compare/v0.3.0...v0.4.0) (2024-06-24)
 
 
@@ -33,20 +46,6 @@
 ### Bug Fixes
 
 * Functions can be imported from tools and individually ([#3](https://github.com/konotorii/useful-functions-ts/issues/3)) ([43d031b](https://github.com/konotorii/useful-functions-ts/commit/43d031b9a3a1b01a7bf06fca366835c9ee194c68))
-
-
-
-# [0.2.0](https://github.com/konotorii/useful-functions-ts/compare/v0.1.0...v0.2.0) (2024-06-10)
-
-
-### Bug Fixes
-
-* Default utility template file had wrong export ([58b06b3](https://github.com/konotorii/useful-functions-ts/commit/58b06b3af736dff5cc8247da666551e74943d937))
-
-
-### Features
-
-* Format Number ([#2](https://github.com/konotorii/useful-functions-ts/issues/2)) ([fe19a4d](https://github.com/konotorii/useful-functions-ts/commit/fe19a4d5f3c0d52dc8b95d7e7d1ee0663066b68b))
 
 
 
