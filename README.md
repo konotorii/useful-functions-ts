@@ -19,8 +19,8 @@ To-Be-Completed as updates roll-out.
 ```ts
 import {tools} from "useful-functions-ts";
 
-tools.delay()
-tools.formatNumber()
+tools.delay();
+tools.formatNumber();
 // etc.
 ```
 
@@ -38,4 +38,31 @@ import {formatNumber} from "useful-functions-ts";
 
 formatNumber(192874.24, 'en'); // Returns 192,874.24
 formatNumber(192874.24, 'de'); // Returns 192.874,24
+```
+
+### Percentage
+
+```ts
+import {percentage} from "useful-functions-ts";
+
+percentage(1, 100); // Returns 1%
+```
+
+### Logger
+
+```ts
+import {Logger} from 'useful-functions-ts'
+
+const logger = new Logger("Main Process", {
+    outputFile?: boolean, // Save output to file
+    filePath?: string, // relative or absolute to folder
+    outputJson?: boolean, // Be able to access the outputs as json with logger.getOutput()
+}); // These settings are optional
+
+logger.info("This is info");
+logger.log("Simple log");
+logger.warn("A warning");
+logger.error("An error occured");
+logger.success("Succeeded!");
+logger.debug("Debug info");
 ```
