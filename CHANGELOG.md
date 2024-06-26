@@ -1,3 +1,12 @@
+## [0.7.1](https://github.com/konotorii/useful-functions-ts/compare/v0.7.0...v0.7.1) (2024-06-26)
+
+
+### Bug Fixes
+
+* Default values were wrongly set ([e91e479](https://github.com/konotorii/useful-functions-ts/commit/e91e479aaa1b71aa925b2b394b972e8a1aee32a7))
+
+
+
 # [0.7.0](https://github.com/konotorii/useful-functions-ts/compare/v0.6.0...v0.7.0) (2024-06-26)
 
 
@@ -31,19 +40,6 @@
 ### Features
 
 * Add function to logger class to clear output ([45abf18](https://github.com/konotorii/useful-functions-ts/commit/45abf18aca3555a7cff005019be6da482e88a1ba))
-
-
-
-## [0.4.1](https://github.com/konotorii/useful-functions-ts/compare/v0.4.0...v0.4.1) (2024-06-25)
-
-
-### Bug Fixes
-
-* Delete .idea directory ([2d0d42f](https://github.com/konotorii/useful-functions-ts/commit/2d0d42fcab57c25a08e14f6f6e2fb7b0eca54698))
-* Git ignore .idea folder ([49a170a](https://github.com/konotorii/useful-functions-ts/commit/49a170aea7b800b66ddf4798bc2839bd0dac5319))
-* Individual imports work again ([b7c81e0](https://github.com/konotorii/useful-functions-ts/commit/b7c81e0cbc58f09eef71f710ecec1c3dc946e3a1))
-* Make logger class uppercase ([98b2ebb](https://github.com/konotorii/useful-functions-ts/commit/98b2ebbd244c448b53dc9fc88f28429681c91e2d))
-* Remove first all export from main file ([1a86cb1](https://github.com/konotorii/useful-functions-ts/commit/1a86cb19545daabc3335bcbb9ea97bad3560c716))
 
 
 
