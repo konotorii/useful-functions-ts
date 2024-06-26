@@ -9,9 +9,9 @@ interface Output {
 }
 
 interface LoggerProps {
-    outputFile?: false,
-    filePath?: "",
-    outputJson?: false,
+    outputFile?: boolean,
+    filePath?: string,
+    outputJson?: boolean,
 }
 
 const output: Output[] = [{
@@ -26,6 +26,11 @@ class Logger {
     log_file: string
 
     constructor(process: string, props?: LoggerProps) {
+        this.props = {
+            outputFile: false,
+            filePath: "",
+            outputJson: false,
+        }
         this.props = props
         this.process = process
         this.log_file = `${DateTime.now().toFormat("HH mm ss dd LL yyyy")}.log`;
