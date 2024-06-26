@@ -66,6 +66,10 @@ class Logger {
 
         const lastFile = files.sort((a, b) => b.stat.mtimeMs - a.stat.mtimeMs)[0]
 
+        const read = fs.readFileSync(this.props.filePath + `/${lastFile.file}`, "utf8")
+
+        if (read.includes("=--- END OF LOG ---=")) return {create: true, lastFile}
+
         if (Date.now() - lastFile.stat.mtimeMs < 300000) return {create: false, lastFile}
 
         return {create: true, lastFile}
@@ -154,6 +158,10 @@ class Logger {
 
     clearOutput() {
         output.splice(0, output.length)
+    }
+
+    stopLogger() {
+       this.appendToFile(DateTime.now().toISO({includeOffset: false}) + "| =--- END OF LOG ---=")
     }
 }
 
