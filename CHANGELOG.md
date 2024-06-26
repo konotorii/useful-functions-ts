@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/konotorii/useful-functions-ts/compare/v0.7.1...v0.8.0) (2024-06-26)
+
+
+### Features
+
+* Add stop logger function and logic to check if log file was ended or not ([#6](https://github.com/konotorii/useful-functions-ts/issues/6)) ([5b79a2e](https://github.com/konotorii/useful-functions-ts/commit/5b79a2e4f14e666e05306777edbd791448e684fa))
+
+
+
 ## [0.7.1](https://github.com/konotorii/useful-functions-ts/compare/v0.7.0...v0.7.1) (2024-06-26)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * Return type of getoutput from logger ([7ea0f08](https://github.com/konotorii/useful-functions-ts/commit/7ea0f083319d566e380f55d3273880a50d4c945e))
-
-
-
-# [0.5.0](https://github.com/konotorii/useful-functions-ts/compare/v0.4.1...v0.5.0) (2024-06-25)
-
-
-### Features
-
-* Add function to logger class to clear output ([45abf18](https://github.com/konotorii/useful-functions-ts/commit/45abf18aca3555a7cff005019be6da482e88a1ba))
 
 
 
