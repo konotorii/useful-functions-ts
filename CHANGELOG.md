@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/konotorii/useful-functions-ts/compare/v0.5.1...v0.6.0) (2024-06-26)
+
+
+### Features
+
+* Added logic to check when last log files were created and if a new one should be made or not ([#4](https://github.com/konotorii/useful-functions-ts/issues/4)) ([ff7c9ff](https://github.com/konotorii/useful-functions-ts/commit/ff7c9ff7e16a7ffa22e7797e901ac1a057789093))
+
+
+
 ## [0.5.1](https://github.com/konotorii/useful-functions-ts/compare/v0.5.0...v0.5.1) (2024-06-25)
 
 
@@ -42,15 +51,6 @@
 * Added luxon dependency ([60f942c](https://github.com/konotorii/useful-functions-ts/commit/60f942cd387d68a795bfa6f5e30c251746487aa2))
 * Export logger class ([33f19fc](https://github.com/konotorii/useful-functions-ts/commit/33f19fce29cf7dce17e9d179c41266d9c97dea0c))
 * Logger Class with different outputs ([bba59b0](https://github.com/konotorii/useful-functions-ts/commit/bba59b0015bb6293de48caf53420afaef089e6b7))
-
-
-
-# [0.3.0](https://github.com/konotorii/useful-functions-ts/compare/v0.2.2...v0.3.0) (2024-06-18)
-
-
-### Features
-
-* Added percentage function ([8991b53](https://github.com/konotorii/useful-functions-ts/commit/8991b53fcdfb6366781a179cbb14bfb3d85db647))
 
 
 
