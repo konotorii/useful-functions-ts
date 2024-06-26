@@ -32,13 +32,36 @@ class Logger {
     }
 
     private appendToFile(msg: string) {
-        const filePath = path.resolve(this.props.filePath + `/${this.log_file}`)
+        let filePath = path.resolve(this.props.filePath + `/${this.log_file}`)
 
-        const find = fs.existsSync(filePath)
+        const check = this.checkIfNewLog()
 
-        if (!find) fs.writeFileSync(filePath, DateTime.now().toISO({includeOffset: false}) + "| =--- START OF LOG ---=\n");
+        if (!check.create) {
+            filePath = path.resolve(this.props.filePath + `/${check.lastFile.file}`)
+        }
+        else {
+           const find = fs.existsSync(filePath)
+
+            if (!find) fs.writeFileSync(filePath, DateTime.now().toISO({includeOffset: false}) + "| =--- START OF LOG ---=\n");
+        }
 
         fs.appendFileSync(filePath, msg + '\n')
+    }
+
+    private checkIfNewLog() {
+        const dir = fs.readdirSync(this.props.filePath)
+
+        const stats = dir.map((v) => fs.statSync(this.props.filePath + `/${v}`))
+
+        const files = stats.map((stat, i) => {
+            return {stat, file: dir[i]}
+        });
+
+        const lastFile = files.sort((a, b) => b.stat.mtimeMs - a.stat.mtimeMs)[0]
+
+        if (Date.now() - lastFile.stat.mtimeMs < 300000) return {create: false, lastFile}
+
+        return {create: true, lastFile}
     }
 
     private msgFormatter(msg: string, type: string) {
