@@ -9,9 +9,9 @@ interface Output {
 }
 
 interface LoggerProps {
-    outputFile?: boolean,
-    filePath?: string,
-    outputJson?: boolean,
+    outputFile?: false,
+    filePath?: "",
+    outputJson?: false,
 }
 
 const output: Output[] = [{
@@ -32,6 +32,8 @@ class Logger {
     }
 
     private appendToFile(msg: string) {
+        if (this.props.filePath.length == 0) return this.error("No file path was provided!")
+
         let filePath = path.resolve(this.props.filePath + `/${this.log_file}`)
 
         const check = this.checkIfNewLog()
