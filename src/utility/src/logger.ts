@@ -18,7 +18,7 @@ const output: Output[] = [{
     text: "| =--- START OF LOG ---=",
     time: DateTime.now().toISO({includeOffset: false}),
     type: "INFO",
-}]
+}];
 
 class Logger {
     props: LoggerProps
@@ -57,6 +57,8 @@ class Logger {
 
     private checkIfNewLog() {
         const dir = fs.readdirSync(this.props.filePath)
+
+        if (dir.length == 0) return {create: true}
 
         const stats = dir.map((v) => fs.statSync(this.props.filePath + `/${v}`))
 
