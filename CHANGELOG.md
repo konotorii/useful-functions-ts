@@ -1,3 +1,12 @@
+## [0.8.1](https://github.com/konotorii/useful-functions-ts/compare/v0.8.0...v0.8.1) (2024-06-27)
+
+
+### Bug Fixes
+
+* Check if folder returned nothing or not ([#7](https://github.com/konotorii/useful-functions-ts/issues/7)) ([ff019ae](https://github.com/konotorii/useful-functions-ts/commit/ff019ae120faeed2359729483b354984c682c839))
+
+
+
 # [0.8.0](https://github.com/konotorii/useful-functions-ts/compare/v0.7.1...v0.8.0) (2024-06-26)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Added logic to check when last log files were created and if a new one should be made or not ([#4](https://github.com/konotorii/useful-functions-ts/issues/4)) ([ff7c9ff](https://github.com/konotorii/useful-functions-ts/commit/ff7c9ff7e16a7ffa22e7797e901ac1a057789093))
-
-
-
-## [0.5.1](https://github.com/konotorii/useful-functions-ts/compare/v0.5.0...v0.5.1) (2024-06-25)
-
-
-### Bug Fixes
-
-* Return type of getoutput from logger ([7ea0f08](https://github.com/konotorii/useful-functions-ts/commit/7ea0f083319d566e380f55d3273880a50d4c945e))
 
 
 
