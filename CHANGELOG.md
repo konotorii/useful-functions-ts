@@ -1,3 +1,12 @@
+## [0.8.2](https://github.com/konotorii/useful-functions-ts/compare/v0.8.1...v0.8.2) (2024-08-11)
+
+
+### Bug Fixes
+
+* Fixed logger constructor error when some parameters aren't given ([15fc58f](https://github.com/konotorii/useful-functions-ts/commit/15fc58f64f7a7fb0325ac2b859249fa304ddcc28))
+
+
+
 ## [0.8.1](https://github.com/konotorii/useful-functions-ts/compare/v0.8.0...v0.8.1) (2024-06-27)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Set default values for props ([#5](https://github.com/konotorii/useful-functions-ts/issues/5)) ([108dfef](https://github.com/konotorii/useful-functions-ts/commit/108dfef99210bcea479efd966c6a07ba59ac259b))
-
-
-
-# [0.6.0](https://github.com/konotorii/useful-functions-ts/compare/v0.5.1...v0.6.0) (2024-06-26)
-
-
-### Features
-
-* Added logic to check when last log files were created and if a new one should be made or not ([#4](https://github.com/konotorii/useful-functions-ts/issues/4)) ([ff7c9ff](https://github.com/konotorii/useful-functions-ts/commit/ff7c9ff7e16a7ffa22e7797e901ac1a057789093))
 
 
 
