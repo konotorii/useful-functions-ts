@@ -27,11 +27,10 @@ class Logger {
 
     constructor(process: string, props?: LoggerProps) {
         this.props = {
-            outputFile: false,
-            filePath: "",
-            outputJson: false,
+            outputFile: props.outputFile ? props.outputFile : undefined,
+            filePath: props.filePath ? props.filePath : "",
+            outputJson: props.outputJson ? props.outputJson : undefined,
         }
-        this.props = props
         this.process = process
         this.log_file = `${DateTime.now().toFormat("HH mm ss dd LL yyyy")}.log`;
     }
@@ -45,9 +44,8 @@ class Logger {
 
         if (!check.create) {
             filePath = path.resolve(this.props.filePath + `/${check.lastFile.file}`)
-        }
-        else {
-           const find = fs.existsSync(filePath)
+        } else {
+            const find = fs.existsSync(filePath)
 
             if (!find) fs.writeFileSync(filePath, DateTime.now().toISO({includeOffset: false}) + "| =--- START OF LOG ---=\n");
         }
@@ -163,7 +161,7 @@ class Logger {
     }
 
     stopLogger() {
-       this.appendToFile(DateTime.now().toISO({includeOffset: false}) + "| =--- END OF LOG ---=")
+        this.appendToFile(DateTime.now().toISO({includeOffset: false}) + "| =--- END OF LOG ---=")
     }
 }
 
