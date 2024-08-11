@@ -26,11 +26,20 @@ class Logger {
     log_file: string
 
     constructor(process: string, props?: LoggerProps) {
-        this.props = {
-            outputFile: props.outputFile ? props.outputFile : undefined,
-            filePath: props.filePath ? props.filePath : "",
-            outputJson: props.outputJson ? props.outputJson : undefined,
+        try {
+            this.props = {
+                outputFile: props.outputFile ? props.outputFile : false,
+                filePath: props.filePath ? props.filePath : "",
+                outputJson: props.outputJson ? props.outputJson : false,
+            }
+        } catch (e) {
+            this.props = {
+                outputFile: false,
+                filePath: "",
+                outputJson: false,
+            }
         }
+
         this.process = process
         this.log_file = `${DateTime.now().toFormat("HH mm ss dd LL yyyy")}.log`;
     }
